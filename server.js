@@ -10,12 +10,12 @@ let app = express();
 hbs.registerPartials(__dirname+"/views/partials");
 app.set("view engine", "hbs");
 
-app.use((req,res,next)=>{
+/*app.use((req,res,next)=>{
     res.render("maintenance.hbs",{
         pageTitle:"Maintenance",
         message: "We'll be back shorty."
     })
-});
+});*/
 
 app.use((req, res, next)=>{
     let now = new Date().toString();
